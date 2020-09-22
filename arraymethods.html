@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = [];
+        arr[0] = ("Oluwatimilehin");
+        arr.push("Idowu");
+        arr.unshift("blue");
+        arr.shift();
+        console.log(arr);
+
+        let arr2 = [];
+        arr2[0] = 95;
+        arr2.push("JavaScript");
+        console.log(arr2.indexOf(95));
+        console.log(arr2.indexOf("Ruby")); // Returns -1
+        console.log(arr2);
+
+        let combinedArr = arr.concat(arr2);
+        console.log(combinedArr);
+
+        let arr3 = ["JavaScript", "Python", "Ruby", "Java"];
+        console.log(arr3.slice(1, 3));
+        let arr4 = ["Haskell", "Clojure"];
+        console.log(arr3.concat(arr4));
+        console.log(arr3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
