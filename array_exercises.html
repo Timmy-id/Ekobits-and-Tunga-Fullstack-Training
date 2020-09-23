@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let people = ["Greg", "Mary", "Devon", "James"];
+        for (let name of people) {
+            console.log(name);
+        }
+
+        console.log(people.indexOf("Mary"));
+        console.log(people.indexOf("Foo"));
+
+        let withBob = people.concat("Bob");
+        console.log(withBob);
+
+        people.splice(2, 1, "Elizabeth", "Artie");
+        console.log(people);
+
+        people.shift();
+        console.log(people);
+
+        people.pop();
+        console.log(people);
+
+        people.unshift("Matt");
+        console.log(people);
+
+        people.push("Oluwatimilehin");
+        console.log(people);
+
+        for (let i = 0; i < people.length; i++) {
+            if (people[i] === "Mary") {
+                console.log(people[i]);
+                break;
+            }
+        }
+
+        let newPeople = people.splice(0, 2);
+        console.log(people);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
