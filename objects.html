@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let info = {
+            firstName: "Oluwatimilehin",
+            lastName: "Idowu",
+            occupation: "Student"
+        }
+
+        console.log(info.firstName);
+        console.log(info.lastName);
+        console.log(info.occupation);
+        console.log(info["firstName"]);
+        console.log(info["lastName"]);
+        console.log(info["occupation"]);
+
+        info.hobby = "Watching movies";
+        console.log(info);
+
+        console.log(delete info.occupation);
+        console.log(info);
+    </script>
+    
+    /*
+    The difference betwwen dot notation and bracket notation is that bracket notation allows using variables
+    to access object properties
+    */
+    
+</head>
+<body>
+    
+</body>
+</html>
