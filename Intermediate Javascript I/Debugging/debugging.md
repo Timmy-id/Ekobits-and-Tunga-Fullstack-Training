@@ -19,14 +19,15 @@
               console.log("Error: " + e);
             }
        }
+      ```
        
-     ### Types of errors
+  ### Types of errors
 1. `person;` => `ReferenceError`
 2. ```
     let data = {};
     data.displayInfo();
     ```
-    will give `TypeError
+    will give `TypeError`
 3. ```
     let data = {};
     data.displayInfo.foo = "bar";
