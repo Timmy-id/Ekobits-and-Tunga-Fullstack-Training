@@ -1,5 +1,7 @@
 ## Debugging Exercises
 
+  ###Part I
+
 1. `throw` keyword allows for creating a defined error.
 2. `finally` keyword allows a code to run whether it consists of errors or not.
 3. `TypeError` occurs due to the incorrect use of certain types while `ReferenceError` occurs when trying to access a non-exixtent variable.
@@ -41,3 +43,24 @@
     thing;
    ```
     will give `SyntaxError`
+  ### Part II
+  2. Incorrect
+    ```
+    function addIfEven(num){
+      if(num % 2 = 0){
+          return num + 5;
+      }
+      return num;
+    }
+    ```
+    Correct
+    ```
+    function addIfEven(num){
+      if(num % 2 == 0){
+          return num + 5;
+      }
+      return num;
+    }
+    ```
+    The assignment operator was used in the if statement instead of equal operator.
+3. 
