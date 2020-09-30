@@ -39,7 +39,8 @@
     let data = {};
     data.displayInfo.foo = "bar";
  ```
-   wiil give `TypeError`
+   will give `TypeError`
+   
 4. 
 ```
     function data(){
@@ -48,10 +49,28 @@
     data();
     thing;
 ```
-    will give `SyntaxError`
+   will give `SyntaxError`
+   
 ### Part II
+
+1. 
+  - Incorrect
+```
+for(let i=0; i > 5; i++){
+    console.log(i);
+}
+```
+  - Correct
+```
+function loopToZero(){
+    for(let i=5; i > 0; i--){
+        console.log(i);
+    }
+}
+```
   
-2. - Incorrect<br>
+2. 
+- Incorrect
 ```
     function addIfEven(num){
       if(num % 2 = 0){
@@ -88,5 +107,32 @@ Syntax error - comma was used instead of semicolon
     for(let i=0; i < 5; i++){
         console.log(i);
     }
+}
+```
+4. 
+  - Incorrect
+```
+function displayEvenNumbers(){
+    let numbers = [1,2,3,4,5,6,7,8];
+    let evenNumbers = [];
+    for(let i=0; i<numbers.length-1; i++;){
+        if(numbers % 2 = 0); {
+            evenNumbers.push(i);
+        }
+        return evenNumbers;
+    }
+}
+```
+  - Correct
+```
+function displayEvenNumbers(){
+    let numbers = [1,2,3,4,5,6,7,8];
+    let evenNumbers = [];
+    for(let num of numbers){
+        if(num % 2 == 0) {
+            evenNumbers.push(num)
+        }
+    }
+    return evenNumbers;
 }
 ```
