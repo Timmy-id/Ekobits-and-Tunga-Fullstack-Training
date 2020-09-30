@@ -44,7 +44,8 @@
    ```
     will give `SyntaxError`
   ### Part II
-  2. - Incorrect
+  
+  2. - Incorrect<br>
     ```
     function addIfEven(num){
       if(num % 2 = 0){
