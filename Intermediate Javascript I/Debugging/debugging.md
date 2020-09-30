@@ -64,3 +64,21 @@
     }
     
 The assignment operator was used in the if statement instead of equal operator.
+
+3.
+```
+  function loopToFive(){
+    for(let i=0, i < 5, i++){
+        console.log(i);
+    }
+}
+```
+Syntax error - comma was used instead of semicolon
+
+```
+  function loopToFive(){
+    for(let i=0; i < 5; i++){
+        console.log(i);
+    }
+}
+```
