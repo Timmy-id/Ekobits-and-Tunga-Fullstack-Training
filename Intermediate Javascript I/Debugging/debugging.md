@@ -29,10 +29,10 @@
 
 2. 
 ```
-    let data = {};
-    data.displayInfo();
+let data = {};
+data.displayInfo();
 ```
-    will give `TypeError`
+   will give `TypeError`
     
 3. 
 ```
