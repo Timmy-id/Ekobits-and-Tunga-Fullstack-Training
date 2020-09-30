@@ -46,7 +46,7 @@
   ### Part II
   
   2. - Incorrect<br>
-    ```
+   ```
     function addIfEven(num){
       if(num % 2 = 0){
           return num + 5;
@@ -54,7 +54,6 @@
       return num;
     }
     ```
-    
     - Correct
     ```
     function addIfEven(num){
@@ -64,5 +63,4 @@
       return num;
     }
     ```
-    The assignment operator was used in the if statement instead of equal operator.
-3. 
+The assignment operator was used in the if statement instead of equal operator.
