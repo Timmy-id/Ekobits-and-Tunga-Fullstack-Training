@@ -10,7 +10,8 @@
   - Select the sources tab
   - Click on the New Snippet button and enter a name, then save
 5. An exception is an error that occurs in your code.
-6. ```
+6.
+```
     function() {
       let name = "Timmy";
       try {
@@ -21,48 +22,54 @@
               console.log("Error: " + e);
             }
        }
-      ```
+ ```
        
-  ### Types of errors
+### Types of errors
 1. `person;` => `ReferenceError`
-2. ```
+
+2. 
+```
     let data = {};
     data.displayInfo();
-    ```
+```
     will give `TypeError`
-3. ```
+    
+3. 
+```
     let data = {};
     data.displayInfo.foo = "bar";
-   ```
+ ```
    wiil give `TypeError`
-4. ```
+4. 
+```
     function data(){
     let thing = "foo";
     }
     data();
     thing;
-   ```
+```
     will give `SyntaxError`
-  ### Part II
+### Part II
   
-  2. - Incorrect<br>
-   ```
+2. - Incorrect<br>
+```
     function addIfEven(num){
       if(num % 2 = 0){
           return num + 5;
       }
       return num;
     }
-    
-   Correct
-   
+```
+- Correct
+```
     function addIfEven(num){
       if(num % 2 == 0){
           return num + 5;
       }
       return num;
     }
-    
+ ```
+
 The assignment operator was used in the if statement instead of equal operator.
 
 3.
@@ -73,6 +80,7 @@ The assignment operator was used in the if statement instead of equal operator.
     }
 }
 ```
+
 Syntax error - comma was used instead of semicolon
 
 ```
