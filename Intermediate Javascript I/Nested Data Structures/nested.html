@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        // First Part
+        
+        let nestedData = {
+            innerData: {
+                order: ["first", "second", "third"],
+                snacks: ["chips", "fruit", "crackers"],
+                numberData: {
+                    primeNumbers: [2,3,5,7,11],
+                    fibonnaci: [1,1,2,3,5,8,13]
+                },
+                addSnack: function(snack){
+                    this.snacks.push(snack);
+                    return this;
+                }
+            }
+        }
+
+        // console.log all of the numbers in the primeNumbers array using for loop
+        
+        let numPrime = nestedData.innerData.numberData.primeNumbers;
+        for (num of numPrime){
+            console.log(num)
+        }
+
+        // console.log all of the even Fibonnaci numbers using for loop
+       
+        let numfib = nestedData.innerData.numberData.fibonnaci;
+        for (fibNum of numfib) {
+            if (fibNum % 2 == 0){
+                console.log(fibNum)
+            }
+        }
+  
+        // console.log the value "second" inside the order array
+        
+        console.log(nestedData.innerData.order[1]);
+        
+        // Invoke the addSnack function and add the snack "chocolate"
+
+        console.log(nestedData.innerData.addSnack("chocolate"));
+        
+        
+        // the "this" keyword refers to the global variable "nestedData"
+
+
+        // Second Part
+        
+        let nestedObject = {
+            speakers: [{name:"Elie"},{name:"Tim"},{name:"Matt"}],
+            data: {
+                continents: {
+                    europe: {
+                        countries: {
+                            switzerland: {
+                                capital: "Bern",
+                                population: 8000000
+                            }
+                        }
+                    }
+                },
+                languages: {
+                    spanish: {
+                        hello: "Hola"
+                    },
+                    french: {
+                        hello: "Bonjour"
+                    }
+                }
+            }
+        }
+
+        // function to add a speaker to the array of speakers
+        
+        function addSpeaker(newSpeaker){
+            let allSpeakers = nestedObject.speakers;
+            for(i=0;i<allSpeakers.length;i++){
+                let speaker = {name: newSpeaker}
+                return allSpeakers.push(speaker);
+            }
+        }
+        addSpeaker("Timmy");
+        console.log(nestedObject.speakers);
+
+        // function to add a to the languages object 
+        
+        function addLanguage(newLanguage, greetingLanguage){
+            let allLanguages = nestedObject.data.languages;
+            allLanguages[newLanguage] = {hello: greetingLanguage}
+            return allLanguages;    
+        }
+        addLanguage("dutch", "Halo");
+        console.log(nestedObject.data.languages);
+
+        // function that adds a European country to the countries object
+        
+        function addCountry(country, capitalCity, population){
+            let allCountries = nestedObject.data.continents.europe.countries;
+            allCountries[country] = {
+                capital: capitalCity,
+                population: population
+            }
+            return allCountries;
+        }
+        addCountry("germany", "Berlin", 100000000);
+        console.log(nestedObject.data.continents.europe.countries);
+    </script>
+</body>
+</html>
