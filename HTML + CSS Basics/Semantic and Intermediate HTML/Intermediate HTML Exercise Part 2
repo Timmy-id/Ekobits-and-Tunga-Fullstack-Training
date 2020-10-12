@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate HTML Exercise</title>
+</head>
+<body>
+    <h1>Welcome Back!</h1>
+    <section>
+        <h2>Here's a great video from YouTube!</h2>
+        <iframe width="250" height="200" src="https://www.youtube.com/embed/lUlIxtYfSbM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section>
+        <h2>Here's some music from Soundcloud!</h2>
+        <iframe width="250" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/857701507&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/cuppymusic" title="cuppymusic" target="_blank" style="color: #cccccc; text-decoration: none;">cuppymusic</a> · <a href="https://soundcloud.com/cuppymusic/jollof-on-the-jet" title="Jollof On The Jet ft Rema &amp; Rayvanny" target="_blank" style="color: #cccccc; text-decoration: none;">Jollof On The Jet ft Rema &amp; Rayvanny</a></div>
+
+    </section>
+    <br>
+    <footer>
+        Want to stay informed? Put your info here!<br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <input type="submit" value="Join Our Mailing List!">
+    </footer>
+</body>
+</html>
