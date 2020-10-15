@@ -1,7 +1,7 @@
 ## Timers
 
-1. setInterval allows for a function to be run once, after a set interval of time
-    setTimeout allows a function to be run repeatedly beginning after a set interval of time and then repeating continuosly at that interval.
+1. `setInterval` allows for a function to be run once, after a set interval of time
+    while `setTimeout` allows a function to be run repeatedly beginning after a set interval of time and then repeating continuosly at that interval.
     
 2. The difference between `setInterval` and `loop` is that `setInterval` is timed and `loop` is not timed. You might want to use one over the other when the condition to be met 
     is timely .
