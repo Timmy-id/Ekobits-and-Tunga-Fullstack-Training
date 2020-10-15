@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+</head>
+<body>
+    
+    <script>
+        // 1. countdown
+        function countdown(num) {
+            let timerId = setInterval(function(){
+            num--;
+            if (num > 0) {
+                console.log(num);
+            } else if (num == 0) {
+                clearInterval(timerId);
+                console.log("DONE!");
+                }
+        }, 1000);
+    }
+    console.log(countdown(4));
+    
+    // 2. randomGame
+    // 3. isEven
+    function isEven(num) {
+        if (num % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    console.log(isEven(2));
+    console.log(isEven(3));
+    
+    // 4. isOdd
+    function isOdd(num) {
+        if (num % 2 !== 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    console.log(isOdd(3));
+    console.log(isOdd(14));
+    
+    // 5. isPrime
+    function isPrime(num) {
+        for(var i = 2; i < num; i++)
+        if(num % i === 0) {
+            return false;
+        }
+        return num > 1;
+    }
+    console.log(isPrime(8));
+    console.log(isPrime(17));
+    
+    </script>
+    </script>
+</body>
+</html>
