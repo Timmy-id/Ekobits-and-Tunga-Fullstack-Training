@@ -4,9 +4,9 @@
 1. `webpack` is used to compile javascript modules. `babel` is a javascript transcompiler which is used for compiling latest javascript codes into older versions
  so that they can run on older engines.
 2. `loader` is used for file pre-processing while importing. Types of loaders are:
-  - json5-loader
-  - html-loader
-  - url-loader
+   - json5-loader
+   - html-loader
+   - url-loader
 3. The differnce between `path` and `publicPath` is where we want our bundle.js file to be emmitted to.
 4. A babel `preset` contains the config details of the babel transpiler.
 5. `test:/\.jsx?$/` is a regular expression for checking for all files with the .js extension.
